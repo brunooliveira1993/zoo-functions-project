@@ -15,7 +15,7 @@ it('ao receber parametro count retornar numero de elefantes', () => {
 });
 it('ao receber parametro names retornar um arrau com nomes de elefantes', () => {
   const actual = handlerElephants('names');
-  const expected = [ 'Ilana', 'Orval', 'Bea', 'Jefferson' ];
+  const expected = ['Ilana', 'Orval', 'Bea', 'Jefferson'];
   expect(actual).toEqual(expected);
 });
 it('ao receber parametro averageAge retornar um array com nomes de elefantes', () => {
@@ -35,6 +35,6 @@ it('ao receber parametro location retornar a inteligencia dos elefantes', () => 
 });
 it('ao receber parametro availability retorna um array com a relação de dias em que é possível visitar os elefantes', () => {
   const actual = handlerElephants('availability');
-  const expected = [ 'Friday', 'Saturday', 'Sunday', 'Tuesday' ];
+  const expected = ['Friday', 'Saturday', 'Sunday', 'Tuesday'];
   expect(actual).toEqual(expected);
 });
