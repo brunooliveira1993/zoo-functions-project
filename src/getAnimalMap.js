@@ -1,11 +1,12 @@
 const data = require('../data/zoo_data');
 
-function namesFilter(name) {
-  const filtro = data.species.map((element) => element)
-  return filtro
-}
+// function namesFilter(location) {
+//   const locationNE = data.species.filter((element) => element.location === 'NE');
+//   const locationNW = data.species.filter((element) => element.location === 'NW');
 
-console.log(namesFilter('lions'))
+// }
+
+// console.log(namesFilter('NE'))
 
 function getAnimalMap(options) {
   // seu código aqui
