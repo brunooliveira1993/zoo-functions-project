@@ -1,5 +1,7 @@
 const handlerElephants = require('../src/handlerElephants');
 
+const teste = null
+
 describe('Testes da função HandlerElephants', () => {});
 it('ao nao receber parametro retornar undefined', () => {
   expect(handlerElephants()).toBeUndefined();
@@ -9,6 +11,12 @@ it('se handlerElephants é uma fuinção', () => {
 });
 it('ao receber um numero retorna parametro invalido', () => {
   expect(handlerElephants(5)).toBe('Parâmetro inválido, é necessário uma string');
+});
+it('ao receber um objeto retorna parametro invalido', () => {
+  expect(handlerElephants({})).toBe('Parâmetro inválido, é necessário uma string');
+});
+it('ao receber um objeto retorna parametro invalido', () => {
+  expect(handlerElephants('ola')).toEqual(teste);
 });
 it('ao receber parametro count retornar numero de elefantes', () => {
   expect(handlerElephants('count')).toBe(4);
