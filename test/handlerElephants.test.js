@@ -1,6 +1,6 @@
 const handlerElephants = require('../src/handlerElephants');
 
-const teste = null
+const teste = null;
 
 describe('Testes da função HandlerElephants', () => {});
 it('ao nao receber parametro retornar undefined', () => {
